@@ -1,6 +1,8 @@
+import axios from 'axios'
+
 const App = () => {
   return (
-    <div className="App">test
+    <div className="App">sdsdsd
     </div>
   )
 }
