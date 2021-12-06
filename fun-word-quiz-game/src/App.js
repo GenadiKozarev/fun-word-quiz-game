@@ -52,6 +52,7 @@ const App = () => {
 
     return (
         <div className="app">
+
             {!chosenLevel && <div className="levelSelector">
                 <h1>Fun Word Quiz App</h1>
                 <p>Select a level to begin, mortal.</p>
@@ -72,6 +73,7 @@ const App = () => {
                     <option value="10">Level 10</option>
                 </select>
             </div>}
+
             {chosenLevel && wordsToPickFrom && <div className="questionContainer">
                 <h2>Clash your brain with level: {chosenLevel}</h2>
                 <h3>Your score is: {score}</h3>
@@ -81,6 +83,7 @@ const App = () => {
                             {question.quiz.map((option, _index) => (
                                 <p key={_index}>{option}</p>
                             ))}
+
                             <div className="questionButtons">
                                 {question.option.map((possibility, _possibilityIndex) => (
                                     <div key={_possibilityIndex} className="questionButton">
@@ -95,7 +98,9 @@ const App = () => {
                         </div>
                     ))}
                 </div>
-              <button onClick={() => setChosenLevel(null)}>Go Back</button>
+
+                <button onClick={() => setChosenLevel(null)}>Go Back</button>
+
             </div>}
         </div>
     )

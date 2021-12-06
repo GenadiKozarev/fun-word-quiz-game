@@ -14,3 +14,48 @@
   background-color: cornflowerblue;
   width: 1000px;
 }
+
+.questionWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.questionCard {
+  background-color: floralwhite;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.questionButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.questionButton {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: darkcyan;
+  color: white;
+}
+
+button:disabled {
+  background-color: darkgray;
+  color: darkolivegreen;
+}
+
+select {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: darkcyan;
+}
