@@ -17,17 +17,14 @@ const App = () => {
                 'x-rapidapi-host': 'twinword-word-association-quiz.p.rapidapi.com',
                 'x-rapidapi-key': process.env.REACT_APP_RAPID_API_KEY
             }
-        };
+        }
 
         axios.request(options).then((response) => {
-            console.log(response.data)
             setWordsToPickFrom(response.data)
         }).catch((error) => {
             console.error(error)
         })
     }
-
-    console.log(wordsToPickFrom && wordsToPickFrom.quizlist)
 
     useEffect(() => {
         if (chosenLevel) {
@@ -36,7 +33,6 @@ const App = () => {
     }, [chosenLevel])
 
     const checkAnswer = (possibility, possibilityIndex, correctAnswer) => {
-        console.log(possibilityIndex, correctAnswer)
         if (possibilityIndex == correctAnswer) {
             setCorrectAnswers([...correctAnswers, possibility])
             setScore((score) => score + 1)
@@ -45,10 +41,6 @@ const App = () => {
         }
         setAlreadyClicked([...alreadyClicked, possibility])
     }
-
-    console.log('correctAnswers', correctAnswers)
-
-    console.log('alreadyClicked', alreadyClicked)
 
     return (
         <div className="app">
@@ -100,7 +92,6 @@ const App = () => {
                 </div>
 
                 <button onClick={() => setChosenLevel(null)}>Go Back</button>
-
             </div>}
         </div>
     )
