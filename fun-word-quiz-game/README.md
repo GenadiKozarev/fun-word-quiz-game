@@ -1,5 +1,6 @@
 about this project:
 - no back-end
+- using axios
 
 # Getting Started with Create React App
 
