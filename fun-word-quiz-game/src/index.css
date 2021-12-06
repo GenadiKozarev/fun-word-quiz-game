@@ -1,18 +1,9 @@
 .app {
-  font-family: 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Kanit', sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 100px;
-}
-
-.levelSelector {
-  background-color: burlywood;
-}
-
-.questionContainer {
-  background-color: cornflowerblue;
-  width: 1000px;
 }
 
 .questionWrapper {
@@ -39,11 +30,13 @@
 }
 
 button {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
   margin: 5px;
   padding: 8px;
   border-radius: 5px;
   border: none;
-  background-color: darkcyan;
+  background-color: cornflowerblue;
   color: white;
 }
 
@@ -57,5 +50,5 @@ select {
   padding: 8px;
   border-radius: 5px;
   border: none;
-  background-color: darkcyan;
+  background-color: cornflowerblue;
 }
