@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {useEffect, useState} from 'react'
 
-const App = () => {
+const Аpp = () => {
     const [chosenLevel, setChosenLevel] = useState(null)
     const [wordsToPickFrom, setWordsToPickFrom] = useState(null)
     const [correctAnswers, setCorrectAnswers] = useState([])
